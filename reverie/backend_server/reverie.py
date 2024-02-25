@@ -599,14 +599,19 @@ class ReverieServer:
 
 
 if __name__ == '__main__':
+  import datetime
+
+  current_date_time = datetime.datetime.now()
+  target = current_date_time.strftime("%Y_%m_%d_%H_%M_%S")
+  origin = "base_the_ville_isabella_maria_klaus"
   # rs = ReverieServer("base_the_ville_isabella_maria_klaus", 
   #                    "July1_the_ville_isabella_maria_klaus-step-3-1")
   # rs = ReverieServer("July1_the_ville_isabella_maria_klaus-step-3-20", 
   #                    "July1_the_ville_isabella_maria_klaus-step-3-21")
   # rs.open_server()
 
-  origin = input("Enter the name of the forked simulation: ").strip()
-  target = input("Enter the name of the new simulation: ").strip()
+  #origin = input("Enter the name of the forked simulation: ").strip()
+  #target = input("Enter the name of the new simulation: ").strip()
 
   rs = ReverieServer(origin, target)
   rs.open_server()
