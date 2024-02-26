@@ -107,3 +107,4 @@ ENV/
 environment/frontend_server/temp_storage/curr_sim_code.json
 steps.txt
 reverie/backend_server/test.py
+environment/frontend_server/temp_storage/curr_sim_code.json
